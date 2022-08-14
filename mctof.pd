@@ -1,0 +1,10 @@
+#N canvas 1209 1175 207 174 12;
+#X obj 15 104 temp_mtof;
+#X obj 75 38 inlet;
+#X obj 15 141 outlet;
+#X obj 15 38 inlet;
+#X text 12 19 notein;
+#X text 75 17 desvío en cents;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 0 0;
