@@ -1,0 +1,13 @@
+#N canvas 192 281 542 395 12;
+#X obj 43 29 notein;
+#X obj 43 76 afinador;
+#X obj 43 252 sinte-poly;
+#X obj 43 351 dac~;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 0 2 1 2;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 1 3 2 2;
+#X connect 2 0 3 0;
+#X connect 2 0 3 1;
