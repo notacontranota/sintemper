@@ -11,18 +11,15 @@
 #X obj 111 5 inlet;
 #X obj 104 136 pack 0 20;
 #X obj 32 311 *~ 0.1;
-#X obj 100 244 print;
 #X connect 0 0 11 0;
 #X connect 2 0 10 0;
 #X connect 3 0 4 1;
 #X connect 4 0 0 0;
 #X connect 5 0 6 0;
-#X connect 5 0 12 0;
 #X connect 6 0 8 0;
 #X connect 6 1 7 0;
 #X connect 7 0 2 0;
 #X connect 8 0 4 0;
 #X connect 9 0 8 1;
-#X connect 9 0 12 0;
 #X connect 10 0 3 0;
 #X connect 11 0 1 0;
