@@ -1,0 +1,29 @@
+#N canvas 596 85 744 457 12;
+#X obj 27 26 cnv 15 650 300 empty empty Tuner 20 12 0 18 #ffc7c6 #ff0400
+0;
+#X floatatom 627 42 5 400 460 0 Diapasón\ (La4): diapason_init diapason_r
+0;
+#X floatatom 247 260 5 -50 50 3 Do do_init do_r 0;
+#X floatatom 280 232 5 -50 50 2 Do$-Reb dos_init dos_r 0;
+#X floatatom 312 260 5 -50 50 3 Re re_init re_r 0;
+#X floatatom 345 232 5 -50 50 2 Re$-Mib res_init res_r 0;
+#X floatatom 377 258 5 -50 50 3 Mi mi_init mi_r 0;
+#X floatatom 424 257 5 -50 50 3 Fa fa_init fa_r 0;
+#X floatatom 456 231 5 -50 50 2 Fa$-Solb fas_init fas_r 0;
+#X floatatom 485 257 5 -50 50 3 Sol sol_init sol_r 0;
+#X floatatom 518 230 5 -50 50 2 Sol$-Lab sols_init sols_r 0;
+#X floatatom 548 256 5 -50 50 3 La la_init la_r 0;
+#X floatatom 581 231 5 -50 50 2 La$-Sib las_init las_r 0;
+#X floatatom 611 256 5 -50 50 3 Si si_init si_r 0;
+#X obj 28 350 prueba_afinador;
+#X obj 74 114 vradio 15 1 0 3 temperaments empty Temperaments: 0 -8
+0 10 #fcfcfc #ff0400 #ff0400 0;
+#X obj 30 381 temperaments;
+#X text 96 112 Temperamento igual;
+#X text 97 128 Vallotti;
+#X text 96 145 Wercmeiter III;
+#X obj 214 347 loadbang;
+#X msg 212 380 440;
+#X obj 209 413 s diapason_init;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;

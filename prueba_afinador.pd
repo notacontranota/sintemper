@@ -1,4 +1,4 @@
-#N canvas 588 82 716 395 12;
+#N canvas 671 462 716 351 12;
 #X obj 43 29 notein;
 #X obj 43 76 afinador;
 #X obj 330 255 sinte-poly;

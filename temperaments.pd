@@ -1,0 +1,19 @@
+#N canvas 448 331 950 548 12;
+#X text 250 136 valotti;
+#X text 59 140 temperamento igual;
+#X text 419 140 wercmeister iii;
+#X obj 58 68 sel 0 1 2;
+#X obj 53 21 r temperaments;
+#X msg 52 161 \; do_init 0 \; dos_init 0 \; re_init 0 \; res_init 0
+\; mi_init 0 \; fa_init 0 \; fas_init 0 \; sol_init 0 \; sols_init
+0 \; la_init 0 \; las_init 0 \; si_init 0 \;;
+#X msg 237 157 \; do_init 0 \; dos_init -5 \; re_init -4 \; res_init
+-2 \; mi_init -8 \; fa_init 2 \; fas_init -8 \; sol_init -2 \; sols_init
+-4 \; la_init -6 \; las_init 0 \; si_init -10 \;;
+#X msg 409 161 \; do_init 0 \; dos_init -10 \; re_init -8 \; res_init
+-6 \; mi_init -10 \; fa_init -2 \; fas_init -12 \; sol_init -4 \; sols_init
+-8 \; la_init -12 \; las_init -4 \; si_init -8 \;;
+#X connect 3 0 5 0;
+#X connect 3 1 6 0;
+#X connect 3 2 7 0;
+#X connect 4 0 3 0;
