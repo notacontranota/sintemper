@@ -1,22 +1,10 @@
-#N canvas 596 85 716 278 12;
-#X obj 248 109 cnv 15 450 150 empty empty Tuner 20 12 0 18 #ffc7c6
-#ff0400 0;
-#X floatatom 636 120 5 400 460 0 Diapasón\ (La4): diapason_init diapason_r
-0;
-#X floatatom 270 217 5 -50 50 3 Do do_init do_r 0;
-#X floatatom 303 189 5 -50 50 2 Do$-Reb dos_init dos_r 0;
-#X floatatom 335 217 5 -50 50 3 Re re_init re_r 0;
-#X floatatom 368 189 5 -50 50 2 Re$-Mib res_init res_r 0;
-#X floatatom 400 215 5 -50 50 3 Mi mi_init mi_r 0;
-#X floatatom 447 214 5 -50 50 3 Fa fa_init fa_r 0;
-#X floatatom 479 188 5 -50 50 2 Fa$-Solb fas_init fas_r 0;
-#X floatatom 508 214 5 -50 50 3 Sol sol_init sol_r 0;
-#X floatatom 541 187 5 -50 50 2 Sol$-Lab sols_init sols_r 0;
-#X floatatom 571 213 5 -50 50 3 La la_init la_r 0;
-#X floatatom 604 188 5 -50 50 2 La$-Sib las_init las_r 0;
-#X floatatom 634 213 5 -50 50 3 Si si_init si_r 0;
-#X obj 208 7 temperaments;
+#N canvas 596 85 716 282 12;
+#X obj 611 5 temperaments;
 #X obj 12 7 loadbang;
+#X obj 501 5 sintemper-main;
+#X msg 12 35 \; pd dsp 1 \; diapason_init 415 \; temp_init 3;
+#X obj 11 107 cnv 15 224 154 empty empty empty 20 12 0 14 #ff0400 #404040
+0;
 #X obj 13 109 cnv 15 220 150 empty empty Tmeperaments 20 12 0 18 #ffc7c6
 #ff0400 0;
 #X obj 34 135 vradio 15 1 0 8 temperaments temp_init empty 0 -8 0 10
@@ -29,6 +17,34 @@
 #X text 56 212 Aaron 1/4 comma;
 #X text 56 226 Pythagorean tuning;
 #X text 55 241 Just tuning;
-#X obj 91 7 sintemper-main;
-#X msg 12 35 \; pd dsp 1 \; diapason_init 415 \; temp_init 3;
-#X connect 15 0 27 0;
+#X obj 246 107 cnv 15 454 154 {empty} {empty} {empty} 20 12 0 14 #ff0400
+#404040 0;
+#X obj 248 109 cnv 15 450 150 empty empty Tuner 20 12 0 18 #ffc7c6
+#ff0400 0;
+#X floatatom 636 120 5 400 460 0 Diapasón\ (La4): diapason_init diapason_r
+0;
+#X floatatom 270 217 5 -50 50 3 - do_init do_r 0;
+#X floatatom 303 189 5 -50 50 2 - dos_init dos_r 0;
+#X floatatom 335 217 5 -50 50 3 - re_init re_r 0;
+#X floatatom 368 189 5 -50 50 2 - res_init res_r 0;
+#X floatatom 400 215 5 -50 50 3 - mi_init mi_r 0;
+#X floatatom 447 214 5 -50 50 3 - fa_init fa_r 0;
+#X floatatom 479 188 5 -50 50 2 - fas_init fas_r 0;
+#X floatatom 508 214 5 -50 50 3 - sol_init sol_r 0;
+#X floatatom 541 187 5 -50 50 2 - sols_init sols_r 0;
+#X floatatom 571 213 5 -50 50 3 - la_init la_r 0;
+#X floatatom 604 188 5 -50 50 2 - las_init las_r 0;
+#X floatatom 634 213 5 -50 50 3 - si_init si_r 0;
+#X text 268 234 C;
+#X text 301 172 C#/Db;
+#X text 333 234 D;
+#X text 366 172 D#/Eb;
+#X text 398 232 E;
+#X text 445 231 F;
+#X text 476 171 F#/Gb;
+#X text 506 231 G;
+#X text 539 170 G#/Ab;
+#X text 569 230 A;
+#X text 602 171 A#/Bb;
+#X text 632 230 B;
+#X connect 1 0 3 0;
