@@ -47,3 +47,5 @@
 #X obj 628 138 hradio 15 1 0 3 diapasel_s diapasel_r empty 0 -8 0 10
 #ffffff #ff0400 #000000 0;
 #X text 461 139 fast select 415|432|440;
+#X obj 653 82 bng 15 250 50 0 panic_on empty Panic 17 7 0 10 #ffc7c6
+#ff0400 #000000;
