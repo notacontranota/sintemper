@@ -15,13 +15,12 @@
 #X floatatom 571 213 5 -50 50 3 La la_init la_r 0;
 #X floatatom 604 188 5 -50 50 2 La$-Sib las_init las_r 0;
 #X floatatom 634 213 5 -50 50 3 Si si_init si_r 0;
-#X obj 91 7 prueba_afinador;
-#X obj 210 7 temperaments;
+#X obj 208 7 temperaments;
 #X obj 12 7 loadbang;
 #X obj 13 109 cnv 15 220 150 empty empty Tmeperaments 20 12 0 18 #ffc7c6
 #ff0400 0;
-#X obj 34 135 vradio 15 1 0 8 temperaments empty empty 0 -8 0 10 #fcfcfc
-#ff0400 #ff0400 0;
+#X obj 34 135 vradio 15 1 0 8 temperaments temp_init empty 0 -8 0 10
+#fcfcfc #ff0400 #ff0400 0;
 #X text 56 133 Temperamento igual;
 #X text 57 149 Vallotti;
 #X text 58 166 Wercmeiter III;
@@ -29,6 +28,7 @@
 #X text 56 197 Salinas 1/3 comma;
 #X text 56 212 Aaron 1/4 comma;
 #X text 56 226 Pythagorean tuning;
-#X msg 12 35 \; pd dsp 1 \; diapason_init 440;
 #X text 55 241 Just tuning;
-#X connect 16 0 26 0;
+#X obj 91 7 sintemper-main;
+#X msg 12 35 \; pd dsp 1 \; diapason_init 415 \; temp_init 3;
+#X connect 15 0 27 0;
