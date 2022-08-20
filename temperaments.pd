@@ -1,4 +1,4 @@
-#N canvas 92 350 1257 396 12;
+#N canvas 92 350 1430 396 12;
 #X text 250 136 valotti;
 #X text 60 140 temperamento igual;
 #X text 419 140 wercmeister iii;
@@ -28,17 +28,23 @@
 #X msg 854 162 \; do_init 0 \; dos_init -24 \; re_init -7 \; res_init
 10 \; mi_init -14 \; fa_init 3 \; fas_init -22 \; sol_init -3 \; sols_init
 -27 \; la_init -10 \; las_init 7 \; si_init -7 \;;
-#X obj 53 68 sel 0 1 2 3 4 5 6 7;
 #X text 1124 139 afin justa;
-#X msg 1117 160 \; do_init 0 \; dos_init 0 \; re_init 4 \; res_init
-0 \; mi_init -14 \; fa_init -2 \; fas_init 0 \; sol_init 2 \; sols_init
-0 \; la_init -16 \; las_init 0 \; si_init -12 \;;
-#X connect 3 0 15 0;
-#X connect 15 0 4 0;
-#X connect 15 1 5 0;
-#X connect 15 2 6 0;
-#X connect 15 3 8 0;
-#X connect 15 4 10 0;
-#X connect 15 5 14 0;
-#X connect 15 6 13 0;
-#X connect 15 7 17 0;
+#X obj 53 68 sel 0 1 2 3 4 5 6 7 8;
+#X text 1262 140 hamonic traba;
+#X msg 1117 160 \; do_init 0 \; dos_init 4.9 \; re_init 3.9 \; res_init
+-2.5 \; mi_init -13.7 \; fa_init -29.4 \; fas_init 51.3 \; sol_init
+1.9 \; sols_init 40.5 \; la_init 5.9 \; las_init -31.2 \; si_init -11.7
+\;;
+#X msg 1255 161 \; do_init 0 \; dos_init 0 \; re_init 3.9 \; res_init
+0 \; mi_init -13.7 \; fa_init -1.9 \; fas_init 0 \; sol_init 1.9 \;
+sols_init 0 \; la_init -15.6 \; las_init 0 \; si_init -11.7 \;;
+#X connect 3 0 16 0;
+#X connect 16 0 4 0;
+#X connect 16 1 5 0;
+#X connect 16 2 6 0;
+#X connect 16 3 8 0;
+#X connect 16 4 10 0;
+#X connect 16 5 14 0;
+#X connect 16 6 13 0;
+#X connect 16 7 18 0;
+#X connect 16 8 19 0;
