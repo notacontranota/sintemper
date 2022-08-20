@@ -31,13 +31,13 @@
 #X text 1124 139 afin justa;
 #X obj 53 68 sel 0 1 2 3 4 5 6 7 8;
 #X text 1262 140 hamonic traba;
-#X msg 1117 160 \; do_init 0 \; dos_init 4.9 \; re_init 3.9 \; res_init
--2.5 \; mi_init -13.7 \; fa_init -29.4 \; fas_init 51.3 \; sol_init
-1.9 \; sols_init 40.5 \; la_init 5.9 \; las_init -31.2 \; si_init -11.7
-\;;
 #X msg 1255 161 \; do_init 0 \; dos_init 0 \; re_init 3.9 \; res_init
 0 \; mi_init -13.7 \; fa_init -1.9 \; fas_init 0 \; sol_init 1.9 \;
 sols_init 0 \; la_init -15.6 \; las_init 0 \; si_init -11.7 \;;
+#X msg 1117 159 \; do_init 0 \; dos_init 4.9 \; re_init 3.9 \; res_init
+-2.5 \; mi_init -13.7 \; fa_init -29.4 \; fas_init 51.3 \; sol_init
+2 \; sols_init 40.5 \; la_init 5.9 \; las_init -31.2 \; si_init -11.7
+\;;
 #X connect 3 0 16 0;
 #X connect 16 0 4 0;
 #X connect 16 1 5 0;
@@ -46,5 +46,5 @@ sols_init 0 \; la_init -15.6 \; las_init 0 \; si_init -11.7 \;;
 #X connect 16 4 10 0;
 #X connect 16 5 14 0;
 #X connect 16 6 13 0;
-#X connect 16 7 18 0;
-#X connect 16 8 19 0;
+#X connect 16 7 19 0;
+#X connect 16 8 18 0;
